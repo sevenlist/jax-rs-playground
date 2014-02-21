@@ -10,4 +10,13 @@
         <artifactId>jersey-project</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
+    <build>
+        <!--
+            Source directories are needed by profile "indy" (groovyc Ant task) and
+            by profile "jacoco" (to generate *.groovy.html files).
+        -->
+        <sourceDirectory>src/main/groovy</sourceDirectory>
+        <testSourceDirectory>src/test/groovy</testSourceDirectory>
+    </build>
 </project>
