@@ -1,6 +1,6 @@
 package com.sevenlist.jaxrsplayground
 
-import com.sevenlist.jaxrsplayground.resource.PersonRessource
+import com.sevenlist.jaxrsplayground.resource.PersonResource
 import org.glassfish.jersey.jackson.JacksonFeature
 
 import javax.ws.rs.ApplicationPath
@@ -13,7 +13,7 @@ class JaxRsPlaygroundApplication extends Application {
 
     JaxRsPlaygroundApplication() {
         singletons << new JacksonFeature()
-        singletons << new PersonRessource()
+        singletons << new PersonResource()
     }
 
     @Override

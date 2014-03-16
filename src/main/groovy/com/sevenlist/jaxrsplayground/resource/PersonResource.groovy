@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON
 
 @Path('/persons')
-class PersonRessource {
+class PersonResource {
 
     private Map persons = new ConcurrentHashMap()
 
