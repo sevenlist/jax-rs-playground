@@ -12,6 +12,14 @@
         <relativePath/>
     </parent>
 
+    <properties>
+        <!--
+            Get rid off maven-failsafe-plugin warning:
+            "File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!"
+        -->
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
     <build>
         <!--
             Source directories are needed by profile "indy" (groovyc Ant task) and
