@@ -11,7 +11,7 @@ import javax.ws.rs.core.GenericType
 
 import static javax.ws.rs.client.Entity.json
 
-class PersonResourceTest extends Specification {
+class PersonResourceCT extends Specification {
 
     Client client
     WebTarget webTarget
