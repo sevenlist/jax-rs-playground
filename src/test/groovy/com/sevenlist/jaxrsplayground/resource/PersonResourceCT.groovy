@@ -17,8 +17,7 @@ class PersonResourceCT extends Specification {
     WebTarget webTarget
 
     def setup() {
-        client = ClientBuilder.newClient()
-        client.register(JacksonJsonProvider)
+        client = ClientBuilder.newBuilder().register(JacksonJsonProvider).build()
         webTarget = client.target('http://localhost:8080/persons')
     }
 
